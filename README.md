@@ -77,3 +77,36 @@ Responsibilities:
 ## Communication
 
 Helmet Module ↔ ESP-NOW ↔ Bike Module
+
+## Hardware Components
+
+| Component | Purpose |
+|-----------|---------|
+| ESP32 WROOM | Main processing unit for helmet and bike modules |
+| MPU6050 | Detects sudden acceleration changes and tilt angle |
+| ESP-CAM | Captures images during emergency situations |
+| Capacitive Touch Sensor | Detects whether helmet is worn |
+| GPS Module (NEO-6M) | Provides real-time location tracking |
+| Wireless Relay | Controls vehicle ignition system |
+| Li-ion Battery | Provides portable power supply |
+
+---
+
+## Software Stack
+
+### Development Tools
+- Arduino IDE
+- MIT App Inventor
+- Git & GitHub
+
+### Programming
+- Embedded C
+- Arduino Framework
+
+### Communication
+- ESP-NOW Wireless Protocol
+- Bluetooth Communication
+
+### Sensors & Libraries
+- Adafruit MPU6050 Library
+- TinyGPSPlus Library
