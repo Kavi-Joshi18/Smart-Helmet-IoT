@@ -35,3 +35,45 @@ Two-wheeler accidents often lead to severe injuries due to delayed emergency res
 - Embedded C
 - MIT App Inventor
 - ESP-NOW Wireless Communication
+# System Architecture
+
+## Overview
+
+The Smart Helmet consists of two interconnected modules:
+
+1. Helmet Module
+2. Bike Module
+
+The modules communicate wirelessly using ESP-NOW protocol.
+
+## Helmet Module
+
+Components:
+- ESP32 WROOM controller
+- MPU6050 accelerometer and gyroscope
+- Capacitive touch sensor
+- ESP-CAM
+- SOS push button
+- Buzzer
+
+Responsibilities:
+- Detect helmet usage
+- Monitor rider movement
+- Detect accidents
+- Trigger emergency alerts
+
+## Bike Module
+
+Components:
+- ESP32 controller
+- GPS module
+- Wireless relay
+
+Responsibilities:
+- Receive helmet status
+- Control ignition system
+- Provide location information
+
+## Communication
+
+Helmet Module ↔ ESP-NOW ↔ Bike Module
